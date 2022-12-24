@@ -38,7 +38,6 @@ function createBoxes(amount) {
     newBox += `<div style = 'width: ${sizeBox+i*10}px; height: ${sizeBox+i*10}px; background-color: ${getRandomHexColor()}'></div>`;
   }
   boxes.innerHTML += newBox;
-  console.log(newBox);
 }
 
 buttonDestroy.addEventListener('click', destroyBoxes);
