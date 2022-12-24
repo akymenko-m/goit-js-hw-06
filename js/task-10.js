@@ -21,7 +21,7 @@ function createBoxes(amount) {
   amount = getValue();
 
   let sizeBox = 20;
-
+  let newBox;
   for (let i = 1; i <= amount; i += 1) {
     // sizeBox +=10;
     // const newBox = document.createElement('div');
@@ -30,9 +30,11 @@ function createBoxes(amount) {
     // newBox.style.backgroundColor = getRandomHexColor();
     // boxes.append(newBox);
 
-    const newBox = `<div style = 'width: ${sizeBox+i*10}px; height: ${sizeBox+i*10}px; background-color: ${getRandomHexColor()}'></div>`;
-    boxes.innerHTML += newBox;
+    newBox +=`<div style = 'width: ${sizeBox+i*10}px; height: ${sizeBox+i*10}px; background-color: ${getRandomHexColor()}'></div>`;
+    // boxes.innerHTML += newBox;
   }
+  console.log(newBox);
+  boxes.innerHTML += newBox;
 }
 
 buttonDestroy.addEventListener('click', destroyBoxes);
