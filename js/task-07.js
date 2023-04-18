@@ -1,19 +1,24 @@
-const controlRange = document.querySelector('#font-size-control');
-const textElem = document.querySelector('#text');
-textElem.style.fontSize = '56px';
+const controlRange = document.querySelector("#font-size-control");
+const textElem = document.querySelector("#text");
+textElem.style.fontSize = "56px";
 
-controlRange.addEventListener('input', (event) => {
+// controlRange.addEventListener("input", (event) => {
+//     textElem.style.fontSize = `${event.currentTarget.value}px`;
+// });
+
+controlRange.addEventListener("input", handleInputChange);
+
+function handleInputChange(event) {
+    let target = event.target;
+
+    if (event.target.type !== "range") {
+        target = document.getElementById("font-size-control");
+    }
+    const min = 4;
+    const max = 100;
+    const val = target.value;
+
+    target.style.backgroundSize = ((val - min) * 96) / (max - min) + "% 100%";
+
     textElem.style.fontSize = `${event.currentTarget.value}px`;
-    // console.log(event.currentTarget.value);
-    // console.log(textElem.style.fontSize);
-
-});
-
-//чернетка
- // if (event.currentTarget.value += 1) {
-    //     console.log('hi!');
-    // }
-    // for (let i = min; i <= max; i += 1) {
-    //     textElem.style.fontSize += 1;
-    //     console.log(event.currentTarget.value.length);
-    // }
+}

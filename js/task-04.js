@@ -21,4 +21,5 @@ buttonIncrement.addEventListener("click", () => {
 
 resetButton.addEventListener("click", () => {
     spanEl.textContent = 0;
+    counterValue = 0;
 });
