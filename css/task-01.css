@@ -1,0 +1,80 @@
+body {
+    background: url('../images/bg.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.categories-list {
+    padding-left: 40px;
+    width: 50%;
+    font-size: 24px;
+    color: #4c4e52;
+}
+
+.categories-title {
+    font-size: 24px;
+}
+
+.categories-item {
+    margin-bottom: 10px;
+}
+
+.categories-item:last-child {
+    margin-bottom: 0;
+}
+
+.list li::before {
+    content: attr(data-icon);
+    font-size: 1em;
+    margin-right: 4px;
+}
+
+.btn {
+    margin: 20px 0 20px 40px;
+    display: inline-block;
+    width: 100px;
+    padding: 4px 10px;
+    background-color: #d0961d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4c4e52;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #909296;
+    color: #ecb23a;
+    box-shadow: 4px 4px 5px rgba(229, 165, 35, 0.56);
+}
+
+.get-result {
+    height: 32px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result-data {
+    width: 50%;
+    font-size: 24px;
+    color: #4c4e52;
+}
+
+.result-data ul {
+    margin-top: 10px;
+}
+
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}

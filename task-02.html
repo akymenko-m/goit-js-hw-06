@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 2</title>
-    <link rel="stylesheet" href="css/common.css" />
-    <style>
-      .item {
-        font-weight: 500;
-      }
 
-      .item:not(:last-child) {
-        margin-bottom: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public//favicon-16x16.png">
+  <link rel="manifest" href="./public//site.webmanifest">
+  <title>Task 2</title>
+
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/task-02.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+
+<body>
+  <main class="main">
+    <a href="index.html" class="go-back btn">Go back</a>
+
+    <div class="container">
+      <form class="form">
+        <input name="ingredient" type="text" class="input" placeholder="Enter the ingredient" required>
+        <button type="submit" class="btn-add btn">Add ingredient</button>
+      </form>
+
+      <button type="submit" class="btn-create btn">Create list</button>
+    </div>
 
     <ul id="ingredients"></ul>
+  </main>
 
-    <script src="js/task-02.js" type="module"></script>
-  </body>
+
+  <script src="js/task-02.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+</body>
+
 </html>

@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 1</title>
-    <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
 
-    <ul id="categories">
-      <li class="item">
-        <h2>Animals</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <ul>
-          <li>Cat</li>
-          <li>Hamster</li>
-          <li>Horse</li>
-          <li>Parrot</li>
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public//favicon-16x16.png">
+  <link rel="manifest" href="./public//site.webmanifest">
+  <title>Task 1</title>
+
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/task-01.css" />
+</head>
+
+<body>
+  <a href="index.html" class="go-back btn">Go back</a>
+
+  <button class="get-result btn">Get result</button>
+
+  <main class="main">
+    <ul id="categories" class="categories-list">
+      <li class="categories-item">
+        <h2 class="categories-title">Animals</h2>
+
+        <ul class="list">
+          <li data-icon="🐱">Cat</li>
+          <li data-icon="🐹">Hamster</li>
+          <li data-icon="🐴">Horse</li>
+          <li data-icon="🦜">Parrot</li>
         </ul>
       </li>
-      <li class="item">
-        <h2>Products</h2>
+      <li class="categories-item">
+        <h2 class="categories-title">Products</h2>
 
-        <ul>
-          <li>Bread</li>
-          <li>Prasley</li>
-          <li>Cheese</li>
+        <ul class="list">
+          <li data-icon="🍞">Bread</li>
+          <li data-icon="🥬">Prasley</li>
+          <li data-icon="🧀">Cheese</li>
         </ul>
       </li>
-      <li class="item">
-        <h2>Technologies</h2>
+      <li class="categories-item">
+        <h2 class="categories-title">Technologies</h2>
 
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
+        <ul class="list">
+          <li data-icon="💻">HTML</li>
+          <li data-icon="💻">CSS</li>
+          <li data-icon="💻">JavaScript</li>
+          <li data-icon="💻">React</li>
+          <li data-icon="💻">Node.js</li>
         </ul>
       </li>
     </ul>
 
-    <script src="js/task-01.js" type="module"></script>
-  </body>
+    <div class="result-data is-hidden">
+      <p><b>Number of categories:</b> <span class="num-categories">-</span></p>
+    </div>
+  </main>
+
+
+  <script src="js/task-01.js" type="module"></script>
+</body>
+
 </html>

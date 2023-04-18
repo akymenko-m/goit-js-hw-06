@@ -1,0 +1,42 @@
+body {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title {
+    margin: 30px 0;
+    text-align: center;
+    color: #4c4e52;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px rgba(216, 182, 111, 0.5);
+}
+
+.task-list {
+    padding-left: 40px;
+    font-size: 24px;
+    color: #4c4e52
+}
+
+.task-item {
+    margin-bottom: 10px;
+}
+
+.task-item:last-child {
+    margin-bottom: 0;
+}
+
+.task-link {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4c4e52;
+    text-decoration: none;
+}
+
+.task-link:hover {
+    color: #d0961d;
+    text-decoration: underline;
+    text-shadow: 6px 0px 3px rgba(193, 153, 71, 0.56);
+}
