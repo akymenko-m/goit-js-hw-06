@@ -1,19 +1,24 @@
-let counterValue = 0;
-const spanEl = document.querySelector('#value');
-const buttonDecrement = document.querySelector('button[data-action="decrement"]');
-const buttonIncrement = document.querySelector('button[data-action="increment"]');
+const spanEl = document.querySelector("#value");
+const buttonDecrement = document.querySelector(
+    'button[data-action="decrement"]'
+);
+const buttonIncrement = document.querySelector(
+    'button[data-action="increment"]'
+);
+const resetButton = document.querySelector('button[data-action="reset"]');
 
-buttonDecrement.addEventListener('click', () => {
+let counterValue = 0;
+
+buttonDecrement.addEventListener("click", () => {
     counterValue -= 1;
     spanEl.textContent = counterValue;
-    // console.log(counterValue);
-    // console.log('textContent', spanEl.textContent);
 });
 
-buttonIncrement.addEventListener('click', () => {
+buttonIncrement.addEventListener("click", () => {
     counterValue += 1;
     spanEl.textContent = counterValue;
-    // console.log(counterValue);
-    // console.log('textContent', spanEl.textContent);
 });
 
+resetButton.addEventListener("click", () => {
+    spanEl.textContent = 0;
+});

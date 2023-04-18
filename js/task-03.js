@@ -26,7 +26,7 @@ const images = [
 ];
 
 const galleryList = document.querySelector(".gallery");
-const container = document.querySelector(".large-img");
+const container = document.querySelector("#large-img");
 
 const makeImagesElement = ({ url, alt } = {}) => {
     return `
@@ -57,4 +57,8 @@ function showLargeImg(event) {
     selectedImg = event.target;
 
     container.innerHTML = `<img src="${selectedImg.src}" alt="${selectedImg.alt}">`;
+    container.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+    });
 }

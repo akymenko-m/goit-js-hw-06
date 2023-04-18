@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 4</title>
-    <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
 
-    <div id="counter">
-      <button type="button" data-action="decrement">-1</button>
-      <span id="value">0</span>
-      <button type="button" data-action="increment">+1</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public//favicon-16x16.png">
+  <link rel="manifest" href="./public//site.webmanifest">
+  <title>Task 4</title>
+
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/task-04.css" />
+</head>
+
+<body>
+  <main class="main">
+    <a href="index.html" class="go-back btn">Go back</a>
+
+    <h2 class="title">Counter</h2>
+
+    <div id="counter" class="counter">
+      <button type="button" data-action="decrement" class="counter-btn">-1</button>
+      <span id="value" class="value">0</span>
+      <button type="button" data-action="increment" class="counter-btn">+1</button>
     </div>
 
-    <script src="js/task-04.js" type="module"></script>
-  </body>
+    <button type="button" data-action="reset" class="reset-btn">Reset</button>
+  </main>
+
+  <script src="js/task-04.js" type="module"></script>
+</body>
+
 </html>
