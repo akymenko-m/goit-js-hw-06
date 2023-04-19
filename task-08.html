@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 8</title>
-    <link rel="stylesheet" href="css/common.css" />
-    <style>
-      .login-form {
-        max-width: 320px;
-        display: flex;
-        flex-direction: column;
-      }
 
-      .login-form label {
-        margin-bottom: 16px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      .login-form input,
-      .login-form button {
-        width: 100%;
-        padding: 4px;
-        font: inherit;
-      }
-    </style>
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public//favicon-16x16.png">
+  <link rel="manifest" href="./public//site.webmanifest">
+  <title>Task 8</title>
+
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/task-08.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
+</head>
+
+<body>
+  <main class="main">
+    <a href="index.html" class="go-back btn">Go back</a>
 
     <form class="login-form">
       <label>
         Email
-        <input type="email" name="email" />
+        <input type="email" name="email" class="input" placeholder="example@mail.com" />
       </label>
+
       <label>
         Password
-        <input type="password" name="password" />
+        <input type="password" name="password" class="input" placeholder="Enter password" />
       </label>
-      <button type="submit">Login</button>
-    </form>
 
-    <script src="js/task-08.js" type="module"></script>
-  </body>
+      <button type="submit" class="form-btn">Login</button>
+    </form>
+  </main>
+
+  <script src="js/task-08.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+</body>
+
 </html>

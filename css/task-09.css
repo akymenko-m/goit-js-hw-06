@@ -1,0 +1,55 @@
+body {
+    background: url('../images/bg.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+.btn {
+    margin: 20px 0 20px 40px;
+    display: inline-block;
+    min-width: 100px;
+    padding: 4px 10px;
+    background-color: #d0961d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4c4e52;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #909296;
+    color: #ecb23a;
+    box-shadow: 4px 4px 5px rgba(229, 165, 35, 0.56);
+}
+
+.widget {
+    text-align: center;
+}
+
+.widget p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 48px;
+}
+
+.widget span {
+    font-family: monospace;
+}
+
+.change-color {
+    padding: 8px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #4c4e52;
+    border: 2px #4c4e52 solid;
+    border-radius: 10px;
+    background-color: #ecb23a;
+    transition: transform .2s;
+}
+
+.change-color:hover,
+.change-color:focus {
+    transform: scale(1.1);
+}

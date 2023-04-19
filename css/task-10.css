@@ -1,0 +1,56 @@
+body {
+    background: url('../images/bg.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+.main {
+    margin-left: 40px;
+}
+
+.btn {
+    margin: 20px 0 20px 40px;
+    display: inline-block;
+    min-width: 100px;
+    padding: 4px 10px;
+    background-color: #d0961d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4c4e52;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #909296;
+    color: #ecb23a;
+    box-shadow: 4px 4px 5px rgba(229, 165, 35, 0.56);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 0;
+    margin-left: 40px;
+    border: 2px #4c4e52 solid;
+    font-size: 16px;
+}
+
+.input {
+    width: 100px;
+    text-align: center;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4c4e52;
+    border: 2px solid #bdbdbd;
+    border-radius: 10px;
+}
+
+.input:hover,
+.input:focus {
+    border-color: #ecb23a;
+}
